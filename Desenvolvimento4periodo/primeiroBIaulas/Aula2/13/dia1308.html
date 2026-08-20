@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prefeitura Municipal - Layout</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; }
+
+    /* Barra superior */
+    .topbar {
+        background: #f0f0f0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        font-size: 14px;
+        color: #333;
+    }
+    .topbar .left span { margin-right: 25px; color: #1a3d6d; font-weight: bold; }
+    .topbar .left span:last-child { color: #333; font-weight: normal; }
+    .topbar .right span { margin-left: 25px; color: #1a3d6d; }
+
+    /* Navbar */
+    .navbar {
+        background: #1a3d6d;
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .logo-box {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border: 2px solid #ffffff55;
+        padding: 10px 20px;
+    }
+    .logo-circle {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background: #2f5a94;
+        border: 2px solid #cdd9e8;
+    }
+    .logo-text .title { color: #cfd9e8; font-size: 12px; letter-spacing: 1px; }
+    .logo-text .city { color: #fff; font-size: 22px; font-weight: bold; letter-spacing: 1px; }
+
+    .nav-links {
+        display: flex;
+        gap: 28px;
+        margin-left: 20px;
+        flex-wrap: wrap;
+    }
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    /* Hero */
+    .hero {
+        background: #1a3d6d;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 30px 60px;
+        gap: 30px;
+    }
+    .hero-text { flex: 1; min-width: 300px; color: #fff; }
+    .hero-text h1 { font-size: 40px; margin-bottom: 20px; }
+    .divider { width: 40px; height: 4px; background: #4caf50; margin: 20px 0; }
+    .hero-text .horario { font-weight: bold; margin-bottom: 15px; }
+    .hero-text p { line-height: 1.6; color: #dfe6ef; }
+
+    .hero-image {
+        flex: 1;
+        min-width: 300px;
+        min-height: 300px;
+        background: repeating-linear-gradient(
+            45deg,
+            #2f5a3e,
+            #2f5a3e 10px,
+            #35663f 10px,
+            #35663f 20px
+        );
+        border-radius: 4px;
+    }
+
+    @media (max-width: 700px) {
+        .navbar { flex-direction: column; align-items: flex-start; }
+        .topbar { flex-direction: column; gap: 8px; }
+    }
+</style>
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <div class="topbar">
+        <div class="left">
+            <span>ÚLTIMAS ATUALIZAÇÕES</span>
+            <span>Noite Cultura</span>
+        </div>
+        <div class="right">
+            <span>🎧 Ouvidoria/SIC</span>
+            <span>🌐 Serviços Online</span>
+            <span>✉ Webmail</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo-box">
+            <div class="logo-circle"></div>
+            <div class="logo-text">
+                <div class="title">PREFEITURA MUNICIPAL DE</div>
+                <div class="city">CIDADE EXEMPLO</div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#">INÍCIO</a>
+            <a href="#">MUNICÍPIO ▾</a>
+            <a href="#">GOVERNO ▾</a>
+            <a href="#">PUBLICAÇÕES ▾</a>
+            <a href="#">SERVIÇOS</a>
+            <a href="#">ATENDIMENTO ▾</a>
+            <a href="#">TRANSPARÊNCIA</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Prefeitura de<br>Cidade Exemplo</h1>
+            <div class="divider"></div>
+            <p class="horario">Horário de atendimento segunda a sexta de 08:00 às 12:00 e das 13:30 às 17:00</p>
+            <p>
+                Este é um texto de exemplo descrevendo o município, sua localização,
+                população estimada e principais atividades econômicas. Substitua este
+                conteúdo pelas informações reais da sua cidade.
+            </p>
+        </div>
+            <img src="Wh" alt="Foto do evento" class="hero-image">
+    </div>
+
+</body>
+</html>
