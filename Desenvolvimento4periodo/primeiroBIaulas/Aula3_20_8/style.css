@@ -1,0 +1,63 @@
+ * {
+        margin: 0;
+        padding: 0;
+    
+ }
+ 
+ 
+ 
+ #inline {
+        margin-left: 30px;
+        height: 100px;
+        width: 400px;
+        background-color: rgb(255, 0, 0);
+        color: rgb(223, 218, 218);
+    }   
+
+     #interno {
+        margin-left: 30px;
+        height: 100px;
+        width: 400px;
+        background-color: rgb(78, 2, 255);
+        color: white;
+    }
+
+ #externo {
+    margin-left: 30px;
+        height: 300px;
+        width: 400px;
+        background-color: darkmagenta;
+        color: rgb(223, 218, 218);
+    }   
+
+
+ main {
+    height: 100vh;
+    background-color: black;
+ }
+
+
+    div > h1 {
+        color: rgb(230, 221, 221)   ;
+    }
+
+    span + h1 {
+        color: rgb(249, 244, 244);
+    }
+
+    h1 ~ p {
+        color: rgb(238, 242, 242);
+    }
+
+    .btn {
+        box-sizing: content-box;
+        width: 88px;
+        padding: 12px;
+        background-color: darkcyan;
+        border-radius: 12px;
+    }
+
+    .btn:hover {
+        background-color: rgb(76, 20, 217);
+        cursor: pointer;
+    }
